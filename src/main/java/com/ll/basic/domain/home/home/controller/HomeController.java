@@ -90,4 +90,15 @@ public class HomeController {
     public Map<String, String> getMap() {
         return Map.of("name", "Paul", "hobby", "reading");
     }
+
+    @GetMapping("/article")
+    @ResponseBody
+    public Article getArticle() {
+        return new Article();
+    }
+}
+
+
+class Article {
+
 }
